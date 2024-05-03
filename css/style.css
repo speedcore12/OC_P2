@@ -69,15 +69,13 @@ header {
 .logo{
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 50px;
+    /*padding-left: 50px;*/
     padding-right: 50px;
 }
-
 .logo img{
     width: 60px;
     height: 20px;
 }
-
 
 
 nav ul{
@@ -86,17 +84,23 @@ nav ul{
 }
 
 nav ul li{
+    margin-top: 0px;
     margin: 10px;
-
     padding: 10px;
-
+    border-top: 2px solid white;
 }
 
-nav ul li:first-child {
+nav ul li:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
 
+
+/******** Titre de la page *******/
+
+.titre h1{
+    margin-bottom: 5px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -206,5 +210,11 @@ nav ul li:first-child {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    header{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
+
