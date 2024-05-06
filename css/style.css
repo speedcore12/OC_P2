@@ -102,13 +102,124 @@ nav ul li:hover {
     margin-bottom: 5px;
 }
 
+/********** BARRE DE RECHERCHE ******/
+.search-section {
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.search-bar{
+    display: flex;
+
+}
+.aera-icon {
+    background-color: var(--main-bg-color) ;
+    width: 50px;
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-top-left-radius: 30%;  
+    border-bottom-left-radius: 30%;
+}
+.search-aera{
+    height: 46px;
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+    border-right: none;
+    border-left: none;
+    outline: none;
+}
+
+.search-bar .search-aera{
+    padding-left: 10px;    
+}
+
+.search-button{
+    width: 50px;
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 30%;  
+    border: none;
+    background-color: var(--main-color);
+    margin-right: -10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    margin-left: -10px;
+
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+.fa-magnifying-glass{
+    color: white;
+
+}
+
+/**** Filtres ****/
+
+.filter{
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+}
+
+.group {
+    display: flex;
+}
+.filter-button{
+    border:  3px solid var(--main-bg-color);
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.filter-button h3{
+    display: inline;
+}
+
+.filter-button i {
+    padding-right: 10px;
+}
+
+.filter-button:hover{
+    background-color: var(--filter-bg-color);
+}
+
+
+/***** INFO BULLE *****/
+
+.info{
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info i {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border:  3px solid var(--main-bg-color);
+    border-radius: 50%;
+}
+
+.info i:hover{
+    background-color: var(--filter-bg-color);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 
 .hebergements-and-populaires section {
