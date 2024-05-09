@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
@@ -83,14 +84,14 @@ nav ul{
     display: flex;
 }
 
-nav ul li{
+nav li{
     margin-top: 0px;
     margin: 10px;
     padding: 10px;
     border-top: 2px solid white;
 }
 
-nav ul li:hover {
+nav li:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
@@ -230,8 +231,35 @@ nav ul li:hover {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+.hebergements  {
     width: 65%;
+}
+
+.hebergements .hebergement-cards{
+    display: flex;
+}
+
+.hebergement-cards .group-card-hebergement{
+    margin: 10px;
+    width: 100%;
+}
+
+.group-card-hebergement .card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.group-card-hebergement .card img {
+    width: 100%; 
+    height: 124px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.group-card-hebergement .card-content{
+    margin: 5px;
+    padding: 0px;
 }
 
 /****** Populaires ***********/
@@ -279,6 +307,57 @@ nav ul li:hover {
     margin-bottom: 5px;
 }
 
+/****** ACTIVITES *****/
+.activite{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.activite a{
+    display: flex;  /* Rend chaque lien flexible */
+    flex: 1; 
+}
+
+.activite-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Indique que chaque carte doit grandir pour prendre une part égale de l'espace disponible */
+    margin: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    min-width: 200px; 
+}
+
+.activite-card h3{
+    padding-left: 15px;
+}
+
+.activite-card img{
+    width: 100%; 
+    height: 380px;     
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+/****** FOOTER ******/
+
+footer{
+    display: flex;
+    background-color: var(--main-bg-color);
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style-type: none; 
+    margin-right: 100px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
 
 
 
@@ -317,15 +396,112 @@ nav ul li:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activite-card img{
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
+    
+    footer{
+        flex-direction: column;
+    }
 
     header{
+        flex-direction: column;
+    }
+
+    header .logo{
+        margin: auto;
+    }
+
+    /****** MENU DE NAVIGATION *****/
+    nav{
+        margin: auto;
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        padding: 0px;
+    }
+
+    nav li{
+        border-top: none;
+        width: 100%;
+        border-bottom: 2px solid var(--main-bg-color);
+        margin: 0px;        
+    }
+    
+    nav li:hover {
+        color: var(--main-color);
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    nav a{
+        display: flex;
         align-items: center;
+        justify-content: center;
+    }
+
+    /****** BARE DE RECHCERHCE *****/
+    .search-aera {
+        width: 100%;
+    }
+
+    /***** FILTRES ******/
+    .filter{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter h3{
+        margin-bottom: 5px;
+    }
+
+    .filter .group{
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .filter-button {
+        margin: 5px;
+        width: 100%;
+    }
+
+    /***** HEBERGEMENT ET POPILAIRE ******/
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section{
+        background: none;
+    }
+
+    .hebergements-and-populaires article{
+        margin: 5px;
+    }
+
+    .hebergement-cards{
+        flex-direction: column;
+    }
+
+    .populaires-cards{
+        flex-direction: column;
+        background-color: var(--main-bg-color);
+    }
+    .activite{
+        flex-direction: column;
+    }
+    .populaires-cards a {
+        width: 100%;
     }
 }
 
