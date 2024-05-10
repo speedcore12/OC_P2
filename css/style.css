@@ -122,16 +122,17 @@ nav li:hover {
 
 }
 .aera-icon {
-    background-color: var(--main-bg-color) ;
+    background-color: var(--main-bg-color);
     width: 50px;
     height: 51px;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 30% 0 0 30%;
+    padding: 0px;
 }
 .search-aera{
-    height: 47px;
+    height: 48px;
     border-color: var(--main-bg-color);
     border-style: solid;
     border-width: 1px 0; 
