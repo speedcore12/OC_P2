@@ -22,8 +22,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hébergement">Hébergements</a></li>
-                    <li><a href="#activite">Activités</a></li>
+                    <li><a href="#hebergement-anchor">Hébergements</a></li>
+                    <li><a href="#activite-anchor">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,7 +41,8 @@
                         <i class="fa-solid fa-location-dot aera-icon"></i>
                     </label>
                     <input type="text" class="search-aera" value="Marseille, France" placeholder="Localisation">
-                    <button type="button" class="search-button">
+                    <button type="button" class="search-button">Recherche</button>
+                    <button type="button" class="search-button-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
@@ -74,10 +75,8 @@
             <!-- INFO -->
             <div class="info"><i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
 
-
-            <div class="hebergements-and-populaires">
-
             <!-- HEBERGEMENTS -->
+            <div class="hebergements-and-populaires" id="hebergement-anchor">
                 <section class="hebergements">
                     <h2>Hébergements à Marseille</h2>
                     <div class="hebergement-cards">
@@ -285,34 +284,37 @@
                 </section>
             </div>
             
-            <section class="activite">
-                <a href="#">
-                    <article class="activite-card">
-                        <img src="./images/activites/reno-laithienne.jpg">
-                        <h3>Vieux-Port</h3>
-                    </article>
-                </a>
+            <section class="activite" id="activite-anchor">
+                <h2>Activités à Marseille</h2>
+                <div class="activite-cards">
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="./images/activites/reno-laithienne.jpg">
+                            <h3>Vieux-Port</h3>
+                        </article>
+                    </a>
 
-                <a href="#">
-                    <article class="activite-card">
-                        <img src="./images/activites/paul-hermann.jpg">
-                        <h3>Fort de Pomègues</h3>
-                    </article>
-                </a>
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="./images/activites/paul-hermann.jpg">
+                            <h3>Fort de Pomègues</h3>
+                        </article>
+                    </a>
 
-                <a href="#">
-                    <article class="activite-card">
-                        <img src="./images/activites/kilyan-sockalingum.jpg">
-                        <h3>Parc national des Calanques</h3>
-                    </article>
-                </a>
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg">
+                            <h3>Parc national des Calanques</h3>
+                        </article>
+                    </a>
 
-                <a href="#">
-                    <article class="activite-card">
-                        <img src="./images/activites/florian-wehde.jpg">
-                        <h3>Notre-Dame-de-la-Garde</h3>
-                    </article>
-                </a>
+                    <a href="#">
+                        <article class="activite-card">
+                            <img src="./images/activites/florian-wehde.jpg">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
             </section>
 
         </main>
